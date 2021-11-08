@@ -44,11 +44,14 @@
         <header>
             <h1 v-text="sitename"></h1>
         </header>
+        <figure>
+            <img v-bind:src ="Lessons.image"  alt="Maths.jpg">
+        </figure>
             <button v-on:click="showcheckout">
                 {{cartItemCount}}
             <span class="fas fa-cart-plus"></span>Checkout
             </button>
-       
+            
         <div v-if="showproduct">
             <p><strong>Subject:</strong> {{Lessons.subject}}</p>
             <p><strong>Location:</strong> {{Lessons.location}}</p>
@@ -72,7 +75,7 @@
             location: "London",
             price: 100,
             spaces: 5,
-            image: "\\images//Maths.png"
+            image: "\\images/Maths.jpg"
         }
     },
                
